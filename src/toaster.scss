@@ -1,0 +1,81 @@
+.toast-success.toast-bottom-right {
+  color: var(--toast-success-color);
+  .toast-wrapper.toast-bottom {
+    left: auto;
+  }
+}
+
+@media screen and (max-width: 572px) {
+  #toast-container {
+    top: 47px !important;
+  }
+}
+
+#toast-container {
+  top: 22px;
+  height: 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: none !important;
+
+  .toast-success {
+    color: var(--toast-txt-clr);
+    background: var(--toast-success-bg-clr) 0% 0% no-repeat padding-box;
+    // background-image: url("../src/assets/images/icons/check.svg");
+    border: 1px solid var(--toast-success-bdr-clr);
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width: max-content !important;
+    min-width: 300px !important;
+    max-width: 84vw im !important;
+  }
+
+  .toast-error {
+    color: var(--black-color);
+    background: var(--sundown) 0% 0% no-repeat padding-box;
+    // background-image: url("../src/assets/images/icons/error.svg");
+    border: 1px solid var(--sundown);
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width: max-content !important;
+    min-width: 300px !important;
+    max-width: 84vw !important;
+  }
+  .toast-info {
+    color: var(--black-color);
+    background: var(--charlotte) 0% 0% no-repeat padding-box;
+    // background-image: url("../src/assets/images/icons/information.svg");
+    border: 1px solid var(--charlotte);
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width: max-content !important;
+    min-width: 300px !important;
+    max-width: 84vw !important;
+  }
+  .toast-warning {
+    color: var(--black-color);
+    background: var(--cream) 0% 0% no-repeat padding-box;
+    // background-image: url("../src/assets/images/icons/information.svg");
+    border: 1px solid var(--cream);
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width: max-content !important;
+    min-width: 300px !important;
+    max-width: 84vw !important;
+  }
+  .toast-close-button {
+    color: var(--toast-close-clr);
+  }
+}
+
+.toast-container .ngx-toastr {
+  border-radius: 5px !important;
+  .toast-top-center {
+    width: max-content !important;
+  }
+}

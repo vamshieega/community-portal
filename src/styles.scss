@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~ngx-toastr/toastr.css";
+@import "./toaster.scss";
+@import "./assets/styles/color";
+
+* {
+  font-family: "Poppins-regular";
+}
+
+span.hide-show-psd-css {
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  color: #5a5858;
+}
+/* You can add global styles to this file, and also import other style files */

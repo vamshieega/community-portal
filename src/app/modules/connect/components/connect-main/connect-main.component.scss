@@ -1,0 +1,72 @@
+button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 14px;
+  padding: 4px 8px;
+  color: rgba(0, 0, 0, 0.85);
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+h4 {
+  cursor: pointer;
+}
+button:hover,
+button:focus,
+button:active {
+  cursor: pointer;
+  background-color: #ecf0f1;
+}
+.comment-thread {
+  max-width: 100%;
+  margin: auto;
+  padding: 0;
+
+  background-color: #fff;
+  border: 1px solid transparent; /* Removes margin collapse */
+}
+.m-0 {
+  margin: 0;
+}
+
+/* Comment */
+
+.comment {
+  position: relative;
+  margin: 20px auto;
+}
+.comment-heading {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  font-size: 14px;
+}
+
+.comment-info {
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 5px;
+}
+.comment-author {
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: bold;
+  text-decoration: none;
+}
+.comment-author:hover {
+  text-decoration: underline;
+}
+
+.fa {
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #007bff;
+  /* -webkit-text-stroke-color: #32325D; */
+}
+.col-md-8,
+.com-md-4 {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.comment-body a {
+  color: #32325d;
+}

@@ -1,0 +1,65 @@
+:root {
+  --card-line-height: 1.2em;
+  --card-padding: 1em;
+  --card-radius: 0.5em;
+  --color-gray: #e2ebf6;
+  --color-dark-gray: #c4d1e1;
+  --radio-border-width: 2px;
+  --radio-size: 1.5em;
+
+  //new colors
+  --secondary-card-btn-clr: #e3edfd;
+  --side-bg-clr: #fafafa;
+
+  --box-clr: #dddddd;
+  --dummy-txt-clr: #afafaf;
+  --txt-btn-clr: #4d4f5c;
+  --page-bg-clr: #eef4fc;
+
+  --primary-grey-clr: #f9f9f9;
+  --white-clr: #ffffff;
+
+  --secondary-blue-clr: #5f49f6;
+  --secondary-purple-clr: #9c27b0;
+  --separator-clr: #e4e4ed;
+
+  --shakespeare: #59a1d1;
+  --gray: #989898;
+
+  --blue-color: #32435f;
+
+  //End new colors
+
+  --light-gray: #00000029;
+  --light-blue: #e3edfd;
+  --wild-gray: #f6f6f6;
+  --dark-gray: #656565;
+  --very-light-gray: #fafafa;
+  --gray-number-text: #9f9f9f;
+
+  --sundown: #ffb7b6;
+  --cream: #fbe7c6;
+  --mint: #b7f7c4;
+  --charlotte: #b3e6f5;
+
+  --secondary-clr: #ffffff;
+  --veg-toggle-bg-clr: #1ed7601a;
+  --egg-toggle-bg-clr: #f6f1e3;
+
+  // Toaster Colors
+  --error-color: #e8423e;
+  --error-overlay-color: #ffe9e8;
+  --pending-color: #ffb300;
+  --pending-overlay-color: #fff1d1;
+  --success-color: #3cc480;
+  --success-overlay-color: #ebfef3;
+
+  //Toaster
+  --toast-txt-clr: var(--black-color);
+  --toast-success-bdr-clr: var(--mint);
+  --toast-success-bg-clr: var(--mint);
+  --toast-error-bg-clr: var(--sundown);
+  --toast-error-bdr-clr: var(--sundown);
+  --toast-success-color: var(--mint);
+  --toast-close-clr: var(--sundown);
+}

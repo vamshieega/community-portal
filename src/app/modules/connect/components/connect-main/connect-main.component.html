@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <div class="row mx-1">
+        <div class="col-md-12">
+            <!-- Comment 1 start -->
+            <div class="comment-thread border p-3">
+                <div *ngFor="let thread of ThreadList | filter: searchText" class="comment comment-card-thread"
+                    id="comment-1">
+                    <div class="comment-heading">
+                        <div class="comment-voting">
+                            <img src="../../../assets/img/auser.png"
+                                style="width: 32px; height: 32px; position: relative" alt="" />
+                        </div>
+                        <div class="comment-info">
+                            <a href="#" class="comment-author text-dark">John Moorey</a>
+                            <p class="m-0">5 days ago</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-body ml-1">
+                        <h4>
+                            {{ thread.threadTitle }}
+                        </h4>
+
+                        <span class="p-1"><i class="fa fa-thumbs-up"></i> 15</span>
+
+                        <span class="p-1 ml-2"><i class="fa fa-comment"></i> 20</span>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
