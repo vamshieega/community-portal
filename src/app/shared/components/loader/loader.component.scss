@@ -1,6 +1,43 @@
-.hidden {
-  visibility: hidden;
-}
+// .hidden {
+//   visibility: hidden;
+// }
+// .loader-container {
+//   background: #5554542e !important;
+//   height: 100vh;
+//   position: fixed;
+//   z-index: 2000;
+//   width: 100%;
+//   top: 0;
+//   .loader-2 {
+//     position: fixed;
+//     z-index: 2000;
+//     overflow: visible;
+//     margin: auto;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     height: 50px;
+//     width: 50px;
+//     border: 5px solid white;
+//     border-radius: 50%;
+//     border-top: 5px solid rgb(172, 172, 16);
+//     animation: spin 1s linear infinite;
+//     -webkit-animation: spin 1s linear infinite;
+//   }
+//   @keyframes spin {
+//     0% {
+//       transform: rotate(0deg);
+//     }
+
+//     100% {
+//       transform: rotate(360deg);
+//     }
+//   }
+// }
+
+/*  begin cubes css */
+
 .loader-container {
   background: #5554542e !important;
   height: 100vh;
@@ -8,30 +45,75 @@
   z-index: 2000;
   width: 100%;
   top: 0;
-  .loader-2 {
-    position: fixed;
-    z-index: 2000;
-    overflow: visible;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 50px;
-    width: 50px;
-    border: 5px solid white;
-    border-radius: 50%;
-    border-top: 5px solid rgb(172, 172, 16);
-    animation: spin 1s linear infinite;
-    -webkit-animation: spin 1s linear infinite;
-  }
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
+}
 
-    100% {
-      transform: rotate(360deg);
-    }
+.cubes {
+  width: 50px;
+  height: 50px;
+  margin: 100px auto;
+  .ct-cube {
+    width: 28%;
+    height: 28%;
+    background-color: #333;
+    float: left;
+    animation: ct-cubeGridScaleDelay 1.1s infinite ease-in-out;
+  }
+  .ct-cube1 {
+    @extend .c-shape;
+    animation-delay: 0.2s;
+  }
+  .ct-cube2 {
+    @extend .c-shape;
+    animation-delay: 0.3s;
+  }
+  .ct-cube3 {
+    @extend .t-shape;
+    animation-delay: 0.4s;
+  }
+  .ct-cube4 {
+    @extend .c-shape;
+    animation-delay: 0.1s;
+  }
+  .ct-cube5 {
+    @extend .t-shape;
+
+    animation-delay: 0.2s;
+  }
+  .ct-cube6 {
+    @extend .t-shape;
+    animation-delay: 0.3s;
+  }
+  .ct-cube7 {
+    @extend .c-shape;
+    animation-delay: 0s;
+  }
+  .ct-cube8 {
+    @extend .c-shape;
+    animation-delay: 0.1s;
+  }
+  .ct-cube9 {
+    @extend .t-shape;
+    animation-delay: 0.2s;
+  }
+}
+.c-shape {
+  margin: 1px;
+  // background-color: #1c3f8f;
+  background-color: #075596;
+}
+
+.t-shape {
+  margin: 1px;
+  background-color: #929497;
+}
+
+@keyframes ct-cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    transform: scale3D(0, 0, 1);
   }
 }
